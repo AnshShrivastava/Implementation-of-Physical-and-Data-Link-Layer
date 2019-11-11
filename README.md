@@ -2,6 +2,6 @@
 
 
 
-#Contrubutors
+# Contributors
 - Ansh Shrivastava(https://github.com/AnshShrivastava)
 - Rishav Jain(https://github.com/rishavjain4)
