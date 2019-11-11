@@ -1,3 +1,4 @@
+#calculating XOR
 def xor(a, b):  
     result = []  
     for i in range(1, len(b)): 
@@ -7,7 +8,7 @@ def xor(a, b):
             result.append('1') 
    
     return ''.join(result)
-
+#Implemented modulo-2 division using xor
 def mod2div(divident, divisor):
     pick = len(divisor)
     temp = divident[0 : pick]
@@ -23,14 +24,14 @@ def mod2div(divident, divisor):
             temp = xor('0'*pick, temp)
     checkword = temp
     return checkword
-
+#Function to encode data for CRC checking
 def encodeData(data, key):
     length_key = len(key)
     appended_data = data + '0'*(length_key-1)
     remainder = mod2div(appended_data, key)
     codeword = data + remainder
     return codeword
-
+#Function to calculate remainder for CRC check
 def decodeData(data, key):
     length_key = len(key)
     appended_data = str(data) + '0'*(length_key-1)
