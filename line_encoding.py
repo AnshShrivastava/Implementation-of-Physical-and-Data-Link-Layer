@@ -1,4 +1,4 @@
-#Function that converts bits into voltage though ______ scheme
+#Function that converts bits into voltage through Bipolar NRZ Technique
 def voltage_to_decode(s):
     l = len(s)
     ss=''
